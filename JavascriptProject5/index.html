@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="extra.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/18f2013824.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div>Art Filters</div>
+        </header> 
+        
+        <div id="mainContainer">
+
+            <div id="sliders">
+                <form>
+                    <p>Opacity:</p>
+
+                    <div id="opacity" class="sliderBar">                   
+                        <input type="range" min="0" max="100" value="100" class="slider" id="opacitySlider">
+                        <p class="value">50%</p>
+                    </div>
+
+                    <p>Saturation:</p>
+
+                    <div id="saturation" class="sliderBar">                   
+                        <input type="range" min="0" max="300" value="100" class="slider" id="saturationSlider">
+                        <p class="value">100%</p>
+                    </div>
+
+                    <p>Brightness:</p>
+
+                    <div id="brightness" class="sliderBar">                   
+                        <input type="range" min="0" max="300" value="100" class="slider" id="brightnessSlider">
+                        <p class="value">100%</p>
+                    </div>
+
+                    <p>Hue Rotate:</p>
+
+                    <div id="hueRotate" class="sliderBar">                   
+                        <input type="range" min="0" max="300" value="0" class="slider" id="hueRotateSlider">
+                        <p class="value">0deg</p>
+                    </div>
+
+                    <p>Grayscale:</p>
+
+                    <div id="grayscale" class="sliderBar">                   
+                        <input type="range" min="0" max="100" value="0" class="slider" id="grayscaleSlider">
+                        <p class="value">0%</p>
+                    </div>
+
+                    <p>Blur:</p>
+
+                    <div id="blur" class="sliderBar">                   
+                        <input type="range" min="0" max="10" value="0" class="slider" id="blurSlider">
+                        <p class="value">0px</p>
+                    </div>
+
+                    <input type="reset" id="reset">
+                </form>
+            </div>
+
+            <div id="mainImage">
+                <img src="images/painting1.jpg" id="mainPic">
+                <p id="caption1">Moonrise Over the Sea by Caspar David Friedrich</p>
+            </div>
+
+            <div id="pictureSelection">
+                
+                <div id="pictures">
+
+                    <div class="picture">
+                        <img src="images/painting1.jpg">
+                    </div>
+
+                    <div class="picture">
+                        <img src="images/painting2.jpg">
+                    </div>
+
+                    <div class="picture">
+                        <img src="images/painting3.jpg">
+                    </div>
+
+                    <div class="picture">
+                        <img src="images/painting4.jpg">
+                    </div>
+
+                    <div class="picture">
+                        <img src="images/painting5.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>        
+        <!-- Project Nav Bar -->
+        <nav id="projectNav"> 
+
+            <div id="navContainer">
+                <ul>
+                    <li><a href="/4900/index.html">Home</a><hr></li>
+                    <li><a href="/4900/CSSProject1/index.html">CSS Project # 1<hr></a></li>
+                    <li><a href="/4900/CSSProject2/index.html">CSS Project # 2<hr></a></li>
+                    <li><a href="/4900/CSSProject3/index.html">CSS Project # 3<hr></a></li>
+                    <li><a href="/4900/CSSProject4/index.html">CSS Project # 4<hr></a></li>
+                    <li><a href="/4900/JavascriptProject1/index.html">Javascript Project # 1<hr></a></li>
+                    <li><a href="/4900/JavascriptProject2/index.html">Javascript Project # 2<hr></a></li>
+                    <li><a href="/4900/JavascriptProject3/index.html">Javascript Project # 3<hr></a></li>
+                    <li><a href="/4900/JavascriptProject4/index.html">Javascript Project # 4<hr></a></li>
+                    <li><a href="/4900/JavascriptProject5/index.html">Javascript Project # 5<hr></a></li>
+                    <li><a href="/4900/JavascriptProject6/index.html">Javascript Project # 6<hr></a></li>
+                    <li><a href="https://github.com/KKjang17/4900">Source Code<hr></a></li>
+                </ul>
+                <div id="assignmentInfo">
+                    <div id="assigmentDetails">
+                           This assignment's primary task was to implement a few sliders that applied their corresponding filters to the selected image instantly. All element manipulation had to be done in JQuery.<br>Below is the reference image. I had to use other images since I did not have access to the repository.
+                    </div>
+                    <img src="images/assignment.jpg" id="assignmentPic">
+                </div>
+            </div>
+            
+            <div id="fadeLeft">
+                <p><i class="fa fa-chevron-right"></i></p>
+            </div>
+        </nav>
+        <script src="main.js"></script>
+       
+    </body>   
+
+</html>    
